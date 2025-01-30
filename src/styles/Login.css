@@ -1,0 +1,137 @@
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.quiz-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.login-forms-container {
+    display: flex;
+    gap: 40px;
+    max-width: 1000px;
+    width: 100%;
+    justify-content: center;
+}
+
+.login-form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.student-form {
+    background-color: #4ade80;
+}
+
+.admin-form {
+    background-color: #ffffff;
+    border: 2px solid #4ade80;
+}
+
+.login-form h2 {
+    margin: 0 0 30px 0;
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 16px;
+}
+
+.student-form input {
+    background-color: #ffffff;
+}
+
+.admin-form input {
+    background-color: #4ade80;
+}
+
+.login-button {
+    width: auto;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.admin-form .login-button {
+    background-color: #4ade80;
+}
+
+.error-message {
+    color: #dc2626;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.switch-button {
+    background: none;
+    border: none;
+    color: #000000;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.switch-button:hover {
+    color: #333333;
+}
+
+.success-message {
+    color: #059669;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #d1fae5;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .login-forms-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .quiz-title {
+        font-size: 36px;
+    }
+}
